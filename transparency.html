@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>HLLM — Transparency</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f6f2;
+        --surface: #ffffff;
+        --text: #121211;
+        --muted: #5a5a54;
+        --border: #deded7;
+        --accent: #3d5a00;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --surface: #0c0c0c;
+          --text: #f2f2ee;
+          --muted: #9d9d97;
+          --border: #222222;
+          --accent: #d4ff3a;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem 4rem;
+      }
+      header {
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        margin: 0 0 0.5rem;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 2rem 0 0.5rem;
+      }
+      p,
+      li {
+        margin: 0 0 0.75rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      a {
+        color: var(--accent);
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      nav a {
+        margin-right: 0.75rem;
+        white-space: nowrap;
+      }
+      pre {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 0.4rem;
+        overflow-x: auto;
+        padding: 0.75rem 1rem;
+      }
+      code {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 0.25rem;
+        padding: 0.05rem 0.3rem;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0 0 1rem;
+      }
+      th,
+      td {
+        border: 1px solid var(--border);
+        padding: 0.5rem 0.6rem;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: var(--surface);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>HLLM Transparency</h1>
+        <p class="muted">Effective date: 2026-09-25</p>
+        <nav aria-label="Legal pages">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/transparency.html">Transparency</a>
+          <a href="/support.html">Support</a>
+        </nav>
+      </header>
+
+      <p>
+        This page lists every destination HLLM itself contacts, and confirms that AI requests never
+        pass through HLLM infrastructure.
+      </p>
+
+      <h2>1. AI requests never touch HLLM</h2>
+      <p>
+        When you send a chat, the request goes directly from your device to the AI provider you
+        configured, authenticated with your own key. HLLM operates no server in that path, so it
+        cannot see your prompts, attachments, responses or usage. The same is true for optional
+        web-search requests made with your own search key.
+      </p>
+      <pre>
+[your device] --HTTPS + your key--> [your AI provider]        (never through HLLM)
+[your device] --HTTPS + your key--> [your search API]         (optional)
+[your device] --HTTPS, no keys---> [Cloudflare: config/legal/report]
+[your device] --HTTPS------------> [AdMob/UMP, Apple/Google stores, Sentry]
+      </pre>
+
+      <h2>2. Exact destinations the app itself contacts</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Host</th>
+            <th scope="col">Why</th>
+            <th scope="col">When</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>report.h93lab.com</code></td>
+            <td>Report intake Worker (category, app version, OS, optional message text/note)</td>
+            <td>Only when you submit the in-app report form</td>
+          </tr>
+          <tr>
+            <td><code>h93lab.com</code></td>
+            <td>
+              Static remote config (<code>config.json</code>, <code>presets.json</code>) and these
+              legal pages
+            </td>
+            <td>On config refresh or when you open a legal page</td>
+          </tr>
+          <tr>
+            <td>Google AdMob / UMP</td>
+            <td>
+              Ad serving and consent management (device identifiers, ad data; non-personalized where
+              consent is not granted)
+            </td>
+            <td>Only while ads are enabled, on the eligible library screen</td>
+          </tr>
+          <tr>
+            <td>Apple App Store / Google Play</td>
+            <td>Processing the one-time "Remove ads" purchase and restoring entitlement</td>
+            <td>Only when you buy or restore</td>
+          </tr>
+          <tr>
+            <td>Sentry</td>
+            <td>Crash diagnostics, scrubbed of text, keys, headers, URL queries and breadcrumbs</td>
+            <td>Only after you opt in (off by default)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="muted">
+        Your chosen AI provider and optional search provider are third parties you select, not HLLM
+        destinations. Their hosts appear in your own provider settings.
+      </p>
+
+      <h2>3. How keys are stored and protected</h2>
+      <ul>
+        <li>
+          API keys and search keys live only in device secure storage (iOS Keychain / Android
+          Keystore).
+        </li>
+        <li>Keys are excluded from the app database, logs, exports and Android/iOS backups.</li>
+        <li>
+          Credentialed requests use HTTPS with redirects refused, so a key is never forwarded to
+          another origin.
+        </li>
+        <li>
+          Network &amp; Privacy in the app is an HLLM request log, not an exhaustive device monitor:
+          it lists hosts HLLM contacts with the hostname only, never paths or query strings.
+        </li>
+      </ul>
+
+      <h2>4. How to verify this yourself</h2>
+      <p>
+        Run the app behind a proxy that records TLS destinations (for example a local mitmproxy or
+        your router's DNS log with a development build). Send a chat and confirm the connection
+        terminates at your provider's host, not at any <code>h93lab.com</code> host. Then use the
+        report form and config refresh; only those actions should reach <code>h93lab.com</code> /
+        <code>report.h93lab.com</code>.
+      </p>
+    </main>
+  </body>
+</html>
