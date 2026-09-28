@@ -146,6 +146,9 @@
         Message text is off by default. Reports never include your keys, provider URLs, model ids or
         other chat history. If the request fails, the app opens a prefilled email to
         <a href="mailto:support@h93lab.com">support@h93lab.com</a> with the same fields.
+        Reports are kept for 90 days and then deleted automatically. Your IP address is never
+        stored; it is only used, as a salted and daily-rotated hash, to limit how many reports can
+        be sent per hour.
       </p>
 
       <h2>5. Optional crash reports (off by default)</h2>
@@ -159,9 +162,10 @@
 
       <h2>6. Ads</h2>
       <p>
-        The free version shows a single banner on the library screen. Ads are served by Google AdMob
+        The free version shows a single banner at the bottom of the side menu. Ads are served by Google AdMob
         with consent handled by Google's User Messaging Platform (UMP) where required. AdMob may
-        receive device identifiers and ad-related data to serve and measure ads. Ads are requested
+        receive device identifiers (such as the advertising ID), an approximate location derived from
+        your IP address, and ad interaction and diagnostic data to serve and measure ads. Ads are requested
         non-personalized where consent for personalization is not granted. AdMob never receives your
         chat content, API keys or message text. Buying "Remove ads" stops ad requests.
       </p>
