@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>HLLM — Support</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f6f2;
+        --surface: #ffffff;
+        --text: #121211;
+        --muted: #5a5a54;
+        --border: #deded7;
+        --accent: #3d5a00;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --surface: #0c0c0c;
+          --text: #f2f2ee;
+          --muted: #9d9d97;
+          --border: #222222;
+          --accent: #d4ff3a;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem 4rem;
+      }
+      header {
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        margin: 0 0 0.5rem;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 2rem 0 0.5rem;
+      }
+      h3 {
+        font-size: 1rem;
+        margin: 1.25rem 0 0.25rem;
+      }
+      p,
+      li {
+        margin: 0 0 0.75rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      a {
+        color: var(--accent);
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      nav a {
+        margin-right: 0.75rem;
+        white-space: nowrap;
+      }
+      code {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 0.25rem;
+        padding: 0.05rem 0.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>HLLM Support</h1>
+        <p class="muted">Effective date: 2026-09-25</p>
+        <nav aria-label="Legal pages">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/transparency.html">Transparency</a>
+          <a href="/support.html">Support</a>
+        </nav>
+      </header>
+
+      <p>
+        Need help or want to report a problem? Email
+        <a href="mailto:support@h93lab.com">support@h93lab.com</a>. If you are reporting an AI
+        message, you can also use the in-app report action on that message.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>Where do I get an API key?</h3>
+      <p>
+        Create an account and an API key with your AI provider (for example OpenAI, Anthropic or
+        Google), then paste the key into HLLM's provider setup. HLLM never issues keys and never
+        stores them outside your device's secure storage.
+      </p>
+
+      <h3>Why does the connection test fail?</h3>
+      <p>
+        Check the base URL, the key and the selected model, and confirm your provider account has
+        access and credit. HLLM reports the provider's own error (for example 401, 403, 404, 429 or
+        a network error) so you can act on it. A failed test does not mean a capability is available
+        or unavailable for sure — re-run diagnostics after fixing the cause.
+      </p>
+
+      <h3>Who pays for the AI usage?</h3>
+      <p>
+        You do. HLLM is a bring-your-own-key client, so your provider bills you directly for the
+        requests you make from your own key. HLLM shows estimated cost only when a price is known,
+        and always labels provider-reported usage separately from estimates.
+      </p>
+
+      <h3>How do I restore the "Remove ads" purchase?</h3>
+      <p>
+        Open Settings and tap "Restore purchases" while signed in to the same store account that
+        made the purchase. The entitlement does not transfer between iOS and Android. If restore
+        does not find it, confirm you are using the same Apple ID or Google account and contact us
+        with your store receipt.
+      </p>
+
+      <h3>How do I delete my data?</h3>
+      <p>
+        Delete individual conversations from the library, or use Settings to delete all local data
+        (chats, attachments and provider secrets). HLLM has no account or server database, so there
+        is no server copy to delete.
+      </p>
+
+      <h3>Why do I see ads?</h3>
+      <p>
+        The free version shows one banner on the library screen after you have used a chat. The
+        one-time "Remove ads" purchase removes it. See the
+        <a href="/privacy.html">Privacy Policy</a> for how ads handle data.
+      </p>
+
+      <h3>Is my chat private?</h3>
+      <p>
+        Your messages go directly from your device to the provider you chose, never through HLLM.
+        See the <a href="/transparency.html">Transparency page</a> for the exact list of
+        destinations.
+      </p>
+    </main>
+  </body>
+</html>
