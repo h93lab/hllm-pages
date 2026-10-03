@@ -89,7 +89,7 @@
     <main>
       <header>
         <h1>HLLM Privacy Policy</h1>
-        <p class="muted">Effective date: 2026-09-25</p>
+        <p class="muted">Effective date: 2026-10-03</p>
         <nav aria-label="Legal pages">
           <a href="/privacy.html">Privacy</a>
           <a href="/terms.html">Terms</a>
@@ -111,7 +111,17 @@
         your device to the provider you chose (for example OpenAI, Anthropic, Google or any
         OpenAI-compatible endpoint). HLLM cannot read those requests and does not relay, copy or
         store them on any HLLM infrastructure. Your provider's own privacy policy and terms apply to
-        that data.
+        that data. Photos and files you attach are sent to that same provider as part of the
+        message you send.
+      </p>
+      <p>
+        <strong>Optional web search and web pages.</strong> Web search is off unless you turn it on
+        for a chat. When it is on, the search queries the model writes are sent either to your AI
+        provider's own search or to the search service you set up with your own key (Tavily, Brave
+        Search, Exa or a SearXNG server you choose). If the model asks to open a web page, the app
+        shows you the address first and fetches the page directly from your device only after you
+        allow it. Images inside AI replies are never loaded automatically; they appear as links you
+        can choose to open in your browser.
       </p>
 
       <h2>2. API keys stay in device secure storage</h2>
@@ -151,13 +161,12 @@
         be sent per hour.
       </p>
 
-      <h2>5. Optional crash reports (off by default)</h2>
+      <h2>5. Crash reports</h2>
       <p>
-        Crash reporting is disabled by default and is not initialized until you turn it on in
-        Settings. When enabled, crash diagnostics are sent to Sentry. The app is configured to send
-        no message text, no keys or headers, no URLs with query strings, no breadcrumbs and no
-        session replay. You can turn it off at any time, and a preview of the diagnostics data is
-        available in the app before sharing.
+        The current version of HLLM sends no crash reports. If a future version adds them, they
+        will be off by default, sent to Sentry only after you turn them on in Settings, and
+        configured to exclude message text, keys, headers, URLs with query strings, breadcrumbs and
+        session replay. This policy will be updated before that happens.
       </p>
 
       <h2>6. Ads</h2>
