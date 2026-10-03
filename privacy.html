@@ -5,99 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <title>HLLM — Privacy Policy</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #f6f6f2;
-        --surface: #ffffff;
-        --text: #121211;
-        --muted: #5a5a54;
-        --border: #deded7;
-        --accent: #3d5a00;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #000000;
-          --surface: #0c0c0c;
-          --text: #f2f2ee;
-          --muted: #9d9d97;
-          --border: #222222;
-          --accent: #d4ff3a;
-        }
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family:
-          system-ui,
-          -apple-system,
-          'Segoe UI',
-          Roboto,
-          sans-serif;
-        line-height: 1.6;
-      }
-      main {
-        max-width: 42rem;
-        margin: 0 auto;
-        padding: 1.5rem 1.25rem 4rem;
-      }
-      header {
-        border-bottom: 1px solid var(--border);
-        margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
-      }
-      h1 {
-        font-size: 1.6rem;
-        line-height: 1.25;
-        margin: 0 0 0.5rem;
-      }
-      h2 {
-        font-size: 1.15rem;
-        margin: 2rem 0 0.5rem;
-      }
-      p,
-      li {
-        margin: 0 0 0.75rem;
-      }
-      ul {
-        padding-left: 1.25rem;
-      }
-      a {
-        color: var(--accent);
-      }
-      .muted {
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
-      nav a {
-        margin-right: 0.75rem;
-        white-space: nowrap;
-      }
-      code {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 0.25rem;
-        padding: 0.05rem 0.3rem;
-      }
-    </style>
+    <link rel="canonical" href="https://hllm.h93lab.com/privacy" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="HLLM — Privacy Policy" />
+    <meta property="og:image" content="https://hllm.h93lab.com/assets/img/og.png" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <h1>HLLM Privacy Policy</h1>
-        <p class="muted">Effective date: 2026-10-03</p>
-        <nav aria-label="Legal pages">
-          <a href="/privacy.html">Privacy</a>
-          <a href="/terms.html">Terms</a>
-          <a href="/transparency.html">Transparency</a>
-          <a href="/support.html">Support</a>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label="HLLM home">
+          <img src="/assets/img/mark-white.png" alt="" width="28" height="28" />
+          HLLM
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a class="hide-sm" href="/#features">Features</a>
+          <a class="hide-sm" href="/#privacy">Privacy</a>
+          <a class="hide-sm" href="/#pricing">Pricing</a>
+          <a class="hide-sm" href="/#faq">FAQ</a>
+          <a href="/support">Support</a>
+          <a class="cta" href="/#download">Get the app</a>
         </nav>
-      </header>
-
+      </div>
+    </header>
+    <main id="main">
+      <div class="doc-hero">
+        <div class="wrap">
+          <h1>HLLM Privacy Policy</h1>
+          <p>Effective date: 2026-10-03</p>
+          <nav class="doc-tabs" aria-label="Legal pages"><a href="/privacy" aria-current="page">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="/transparency">Transparency</a><a href="/support">Support</a></nav>
+        </div>
+      </div>
+      <article class="doc">
       <p>
         HLLM is a "bring your own key" (BYOK) client. You connect the app to your own AI provider
         account. This policy explains what stays on your device, what leaves it, and what HLLM
@@ -204,6 +146,38 @@
         We may update this policy; the effective date above will change. Questions or requests:
         <a href="mailto:support@h93lab.com">support@h93lab.com</a>.
       </p>
+    
+      </article>
     </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <a class="brand" href="/"><img src="/assets/img/mark-white.png" alt="" width="28" height="28" />HLLM</a>
+            <p style="margin-top: 12px; max-width: 26rem">
+              A private AI chat app for your own API key. Made by H93Lab.
+            </p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="/#features">Features</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/#faq">FAQ</a>
+            <a href="/support">Support</a>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/transparency">Transparency</a>
+            <a href="mailto:support@h93lab.com">support@h93lab.com</a>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© 2026 H93Lab. All rights reserved.</span>
+          <span>No cookies. No trackers. No analytics.</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

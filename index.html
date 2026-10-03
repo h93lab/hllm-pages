@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>HLLM — AI chat with your own key</title>
+    <meta
+      name="description"
+      content="HLLM is a fast, private AI chat app for iPhone and Android. Bring your own API key from OpenAI, Anthropic, Google Gemini, OpenRouter and more. No account, no subscription, no middleman."
+    />
+    <link rel="canonical" href="https://hllm.h93lab.com/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon-48.png" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HLLM — AI chat with your own key" />
+    <meta
+      property="og:description"
+      content="Chat with any AI model using your own API key. Private. No subscription."
+    />
+    <meta property="og:url" content="https://hllm.h93lab.com/" />
+    <meta property="og:image" content="https://hllm.h93lab.com/assets/img/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="/assets/fonts/cairo-700.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "HLLM: AI Chat with Your Key",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "ProductivityApplication",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "H93Lab", "email": "support@h93lab.com" }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label="HLLM home">
+          <img src="/assets/img/mark-white.png" alt="" width="28" height="28" />
+          HLLM
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a class="hide-sm" href="#features">Features</a>
+          <a class="hide-sm" href="#privacy">Privacy</a>
+          <a class="hide-sm" href="#pricing">Pricing</a>
+          <a class="hide-sm" href="#faq">FAQ</a>
+          <a href="/support">Support</a>
+          <a class="cta" href="#download">Get the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <div class="hero">
+        <div class="wrap">
+          <div>
+            <span class="eyebrow">iPhone · iPad · Android</span>
+            <h1>Any AI.<br />Your own key.</h1>
+            <p class="lead">
+              HLLM is a fast, private chat app for the AI provider you already pay for. Bring your API
+              key, pick any model, and see what every reply costs — with no account, no subscription
+              and no server in between.
+            </p>
+            <div class="store-buttons" id="hero-download">
+              <a class="btn btn-light store" aria-disabled="true" data-store="ios">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+                <span class="lbl"><small>Coming soon to the</small>App Store</span>
+              </a>
+              <a class="btn btn-ghost store" aria-disabled="true" data-store="android">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3.5v17l13-8.5z"/></svg>
+                <span class="lbl"><small>Coming soon on</small>Google Play</span>
+              </a>
+            </div>
+            <p class="hero-note">Free with one small ad · $1.99 once to remove it</p>
+          </div>
+          <div>
+            <div class="phone">
+              <img
+                src="/assets/img/screens/compare.webp"
+                width="540"
+                height="1173"
+                alt="HLLM chat showing a comparison table answered by Claude"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillars -->
+      <section>
+        <div class="wrap">
+          <p class="kicker">Why HLLM</p>
+          <h2 class="title">Built for people who already have a key.</h2>
+          <p class="sub">
+            Stop paying twice. Use the models you already have access to, in one clean app, on terms
+            you control.
+          </p>
+          <div class="grid grid-3">
+            <div class="card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2 20 3M16 7l3 3M14 9l2 2"/></svg>
+              </div>
+              <h3>Your key, your provider</h3>
+              <p>
+                OpenAI, Anthropic, Google Gemini, OpenRouter, DeepSeek, Groq, Mistral, xAI — or any
+                OpenAI-compatible endpoint. Switch models from the chat header.
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.4 3.1 8.2 7.5 9.5 4.4-1.3 7.5-5.1 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h3>Private by design</h3>
+              <p>
+                Messages go straight from your phone to your provider. Keys stay in the Keychain or
+                Keystore. Chats stay on your device.
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+              </div>
+              <h3>Every token accounted for</h3>
+              <p>
+                Token counts and an estimated cost on every reply, a receipt per message and a
+                monthly spending overview per provider.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screens -->
+      <section class="section-soft" id="features">
+        <div class="wrap">
+          <p class="kicker">Inside the app</p>
+          <h2 class="title">A complete chat app, not a demo.</h2>
+          <p class="sub">
+            Streaming replies with Markdown, tables, math and highlighted code — plus the details that
+            make it feel right.
+          </p>
+          <div class="screens" tabindex="0" aria-label="App screenshots">
+            <figure>
+              <div class="phone"><img src="/assets/img/screens/code.webp" width="540" height="1173" loading="lazy" alt="A TypeScript answer with syntax-highlighted code" /></div>
+              <figcaption>Code that reads well</figcaption>
+            </figure>
+            <figure>
+              <div class="phone"><img src="/assets/img/screens/receipt.webp" width="540" height="1173" loading="lazy" alt="A cost receipt showing tokens and estimated price" /></div>
+              <figcaption>Know what every reply costs</figcaption>
+            </figure>
+            <figure>
+              <div class="phone"><img src="/assets/img/screens/before-sending.webp" width="540" height="1173" loading="lazy" alt="Before sending sheet showing destination, model and size" /></div>
+              <figcaption>See it before you send it</figcaption>
+            </figure>
+            <figure>
+              <div class="phone"><img src="/assets/img/screens/chats.webp" width="540" height="1173" loading="lazy" alt="Side menu with chats grouped by date" /></div>
+              <figcaption>Your chats, on your phone</figcaption>
+            </figure>
+            <figure>
+              <div class="phone"><img src="/assets/img/screens/compare.webp" width="540" height="1173" loading="lazy" alt="A comparison table in a chat reply" /></div>
+              <figcaption>Tables, math and Markdown</figcaption>
+            </figure>
+          </div>
+
+          <div class="grid grid-3" style="margin-top: 36px">
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.4 11.6-8.8 8.8a6 6 0 0 1-8.5-8.5l8.8-8.8a4 4 0 0 1 5.7 5.7l-8.8 8.8a2 2 0 0 1-2.8-2.8l8.1-8.1"/></svg></div>
+              <h3>Photos and documents</h3>
+              <p>Attach photos, PDFs and documents when your model supports them.</p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+              <h3>Web search with sources</h3>
+              <p>Optional search through your provider or your own search key, with citations.</p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+              <h3>Voice in, voice out</h3>
+              <p>Dictate messages and have replies read aloud with your phone's speech services.</p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+              <h3>Search every chat</h3>
+              <p>Find any message instantly. Pin, rename, export or delete everything in one tap.</p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14"/></svg></div>
+              <h3>Request inspector</h3>
+              <p>See the exact request that was sent to your provider — with your key masked.</p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div>
+              <h3>Light and true black</h3>
+              <p>A clean light theme and an AMOLED dark theme that is easy on the eyes and battery.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Providers -->
+      <section>
+        <div class="wrap">
+          <p class="kicker">Works with</p>
+          <h2 class="title">Bring the provider you already use.</h2>
+          <p class="sub">
+            Connect one or several. HLLM tests your key, lists the models it can reach and only
+            offers features your model actually supports.
+          </p>
+          <div class="chips">
+            <span class="chip">OpenAI</span>
+            <span class="chip">Anthropic</span>
+            <span class="chip">Google Gemini</span>
+            <span class="chip">OpenRouter</span>
+            <span class="chip">DeepSeek</span>
+            <span class="chip">Groq</span>
+            <span class="chip">Mistral</span>
+            <span class="chip">xAI</span>
+            <span class="chip">Any OpenAI-compatible API</span>
+          </div>
+          <p class="muted" style="margin-top: 18px; font-size: 14px">
+            Provider names are trademarks of their owners. HLLM is an independent app and is not
+            affiliated with any provider. Usage is billed by your provider under their terms.
+          </p>
+        </div>
+      </section>
+
+      <!-- Privacy -->
+      <section class="section-ink" id="privacy">
+        <div class="wrap">
+          <p class="kicker">Privacy</p>
+          <h2 class="title">No HLLM server in the AI path. Ever.</h2>
+          <p class="sub">
+            We built HLLM so that we can't read your conversations even if we wanted to.
+          </p>
+          <div class="grid grid-2">
+            <div class="card">
+              <h3>Direct to your provider</h3>
+              <p>Every message travels from your device to the AI provider you chose, over HTTPS.</p>
+            </div>
+            <div class="card">
+              <h3>Keys in secure storage</h3>
+              <p>API keys live in the iOS Keychain or Android Keystore and never leave your device except to your own provider.</p>
+            </div>
+            <div class="card">
+              <h3>Chats stay on your phone</h3>
+              <p>No account and no sync. Export your chats or delete everything whenever you like.</p>
+            </div>
+            <div class="card">
+              <h3>See every destination</h3>
+              <p>The Network &amp; Privacy screen lists every service the app talks to. No tracking SDK, no analytics.</p>
+            </div>
+          </div>
+          <p style="margin-top: 28px">
+            <a class="btn btn-ghost" href="/privacy">Read the privacy policy</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing">
+        <div class="wrap">
+          <p class="kicker">Pricing</p>
+          <h2 class="title">Free. One small ad. Or $1.99 once.</h2>
+          <p class="sub">No subscription. Your AI usage is billed directly by your provider.</p>
+          <div class="grid grid-2">
+            <div class="card plan">
+              <span class="tag">Free</span>
+              <div class="price">$0</div>
+              <ul>
+                <li>Every feature included</li>
+                <li>All providers and models</li>
+                <li>One banner at the bottom of the side menu</li>
+                <li>Never an ad inside your chats</li>
+              </ul>
+            </div>
+            <div class="card plan featured">
+              <span class="tag">Remove ads</span>
+              <div class="price">$1.99 <small>one time</small></div>
+              <ul>
+                <li>The banner disappears for good</li>
+                <li>The ad SDK is switched off completely</li>
+                <li>Restore on reinstall with your store account</li>
+                <li>Supports an independent developer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section-soft" id="faq">
+        <div class="wrap faq">
+          <p class="kicker">FAQ</p>
+          <h2 class="title">Questions, answered.</h2>
+          <details>
+            <summary>What is an API key and where do I get one?</summary>
+            <p>
+              An API key lets apps use your AI provider account. You create one in your provider's
+              developer console — for example OpenAI, Anthropic, Google AI Studio or OpenRouter —
+              and paste it into HLLM once. Some providers need billing enabled first.
+            </p>
+          </details>
+          <details>
+            <summary>How much will it cost me?</summary>
+            <p>
+              HLLM is free. Your provider charges for what you use, usually fractions of a cent per
+              message. HLLM shows token counts and an estimated cost on every reply so there are no
+              surprises.
+            </p>
+          </details>
+          <details>
+            <summary>Can HLLM read my chats or my key?</summary>
+            <p>
+              No. There is no HLLM server between you and your provider. Your key is kept in your
+              device's secure storage and your chats are stored only on your device.
+            </p>
+          </details>
+          <details>
+            <summary>Which models can I use?</summary>
+            <p>
+              Any chat model your provider gives you access to. HLLM tests your key and only turns on
+              features — like images, documents or web search — that your model supports.
+            </p>
+          </details>
+          <details>
+            <summary>Does the $1.99 purchase carry over between iPhone and Android?</summary>
+            <p>
+              Purchases are handled by Apple and Google, so they restore on devices that use the same
+              store account. They don't transfer between iPhone and Android.
+            </p>
+          </details>
+          <details>
+            <summary>How do I report a problem or a harmful AI reply?</summary>
+            <p>
+              Tap ⋯ under any reply and choose Report, or email
+              <a href="mailto:support@h93lab.com">support@h93lab.com</a>. See the
+              <a href="/support">support page</a> for more.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section-ink cta-band" id="download">
+        <div class="wrap">
+          <img src="/assets/img/mark-white.png" alt="" width="72" height="72" />
+          <h2 class="title">Your AI, your key, your phone.</h2>
+          <p class="sub" style="margin-inline: auto">HLLM is coming to the App Store and Google Play.</p>
+          <div class="store-buttons">
+            <a class="btn btn-light store" aria-disabled="true" data-store="ios">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+              <span class="lbl"><small>Coming soon to the</small>App Store</span>
+            </a>
+            <a class="btn btn-ghost store" aria-disabled="true" data-store="android">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3.5v17l13-8.5z"/></svg>
+              <span class="lbl"><small>Coming soon on</small>Google Play</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <a class="brand" href="/"><img src="/assets/img/mark-white.png" alt="" width="28" height="28" />HLLM</a>
+            <p style="margin-top: 12px; max-width: 26rem">
+              A private AI chat app for your own API key. Made by H93Lab.
+            </p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="/#features">Features</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/#faq">FAQ</a>
+            <a href="/support">Support</a>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/transparency">Transparency</a>
+            <a href="mailto:support@h93lab.com">support@h93lab.com</a>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© 2026 H93Lab. All rights reserved.</span>
+          <span>No cookies. No trackers. No analytics.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
